@@ -6,7 +6,8 @@
     },
     "scripts": {
         "start": "cd backend/built && node server.js",
-        "prebuild": "cd backend && npm run build",
-        "build": "cd frontend && npm run build"
+        "deployBackend": "cd backend && npm run build",
+        "deployFrontend":"cd frontend && npm install --legacy-peer-deps && ng build",
+        "deploy":"npm run deployFrontend && npm run deployBackend"
     }
 }
