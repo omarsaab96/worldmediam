@@ -1,0 +1,120 @@
+<app-header></app-header>
+<app-subbanner pageTitle='Our Work'></app-subbanner>
+
+
+<div class="tabs">
+    <div class="container">
+        <div class="tabswrapper">
+            <div class="tab active" (click)="showTab(0)">Branding</div>
+            <div class="tab" (click)="showTab(1)">Online Business Management</div>
+        </div>
+
+        <div class="tabContent active">
+            <div class="brandingListing row">
+                <div class="brandingItem col-md-4">
+                    <div class="brandingImage">
+                        <a (click)="showDetails()">
+                            <img class="img-responsive" alt="" src="../../assets/images/logo1.png" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="brandingItem col-md-4">
+                    <div class="brandingImage">
+                        <img class="img-responsive" alt="" src="../../assets/images/logo2.png" />
+
+                    </div>
+                </div>
+
+                <div class="brandingItem col-md-4">
+                    <div class="brandingImage">
+                        <img class="img-responsive" alt="" src="../../assets/images/logo3.png" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabContent">
+            <div class="postsListing row">
+                <lightgallery [settings]="settings">
+                    <a href="../../assets/images/post1.png" class="postItem">
+                        <img alt="" src="../../assets/images/post1.png" />
+                    </a>
+                    <a href="../../assets/images/post2.png" class="postItem">
+                        <img alt="" src="../../assets/images/post2.png" />
+                    </a>
+                    <a href="../../assets/images/post3.png" class="postItem">
+                        <img alt="" src="../../assets/images/post3.png" />
+                    </a>
+                    <a href="../../assets/images/post4.png" class="postItem">
+                        <img alt="" src="../../assets/images/post4.png" />
+                    </a>
+                    <a href="../../assets/images/post5.png" class="postItem">
+                        <img alt="" src="../../assets/images/post5.png" />
+                    </a>
+                    <a href="../../assets/images/post6.png" class="postItem">
+                        <img alt="" src="../../assets/images/post6.png" />
+                    </a>
+                    <a href="../../assets/images/post7.png" class="postItem">
+                        <img alt="" src="../../assets/images/post7.png" />
+                    </a>
+                    <a href="../../assets/images/post8.png" class="postItem">
+                        <img alt="" src="../../assets/images/post8.png" />
+                    </a>
+                    <a href="../../assets/images/post9.png" class="postItem">
+                        <img alt="" src="../../assets/images/post9.png" />
+                    </a>
+                    <a href="../../assets/images/post10.png" class="postItem">
+                        <img alt="" src="../../assets/images/post10.png" />
+                    </a>
+                </lightgallery>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="brandingDetails">
+    <div class="container">
+        <div class="brandingListing row">
+            <div class="brandingItem col-md-3">
+                <div class="brandingImage">
+                    <img class="img-responsive" alt="" src="../../assets/images/branding1a.png" />
+                </div>
+            </div>
+
+            <div class="brandingItem col-md-3">
+                <div class="brandingImage">
+                    <img class="img-responsive" alt="" src="../../assets/images/branding1b.png" />
+
+                </div>
+            </div>
+
+            <div class="brandingItem col-md-3">
+                <div class="brandingImage">
+                    <img class="img-responsive" alt="" src="../../assets/images/branding1c.png" />
+
+                </div>
+            </div>
+
+
+            <div class="brandingItem col-md-3">
+                <div class="brandingImage">
+                    <img class="img-responsive" alt="" src="../../assets/images/branding1d.png" />
+
+                </div>
+            </div>
+
+
+            <div class="brandingItem col-md-3">
+                <div class="brandingImage">
+                    <img class="img-responsive" alt="" src="../../assets/images/branding1e.png" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

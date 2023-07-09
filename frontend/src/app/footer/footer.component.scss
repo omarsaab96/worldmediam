@@ -1,0 +1,31 @@
+$seccol: #29a9e1;
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+            padding-right:20px;
+            margin-right:20px;
+            border-right:1px solid black;
+
+            a{
+                color:#000000;
+                &:hover{
+                    color:$seccol;
+                }
+            }
+
+            &:last-child{
+                margin-right:0;
+                padding-right:0;
+                border-right:none;
+            }
+        }
+    }
+}

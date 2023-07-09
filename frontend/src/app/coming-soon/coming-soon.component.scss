@@ -1,0 +1,89 @@
+.comingSoon {
+    position: relative;
+    background-image: url(../../assets/images/comingsoonBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 1;
+        opacity: 0.3;
+    }
+
+    .content {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
+        padding:30px;
+
+        .logo {
+            width: 90px;
+            height: auto;
+            display: block;
+        }
+
+        .txt {
+            text-align: center;
+            color: white;
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .social {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 20px;
+
+                    a {
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        transition: all 0.3s ease-in-out;
+
+                        &.fb {
+                            background-image: url(../../assets/images/fb-white.svg);
+                            &:hover{
+                                background-image: url(../../assets/images/fb-black.svg);
+                            }
+                        }
+                        &.ig {
+                            background-image: url(../../assets/images/ig-white.svg);
+                            &:hover{
+                                background-image: url(../../assets/images/ig-black.svg);
+                            }
+                        }
+                        &.wp {
+                            background-image: url(../../assets/images/wp-white.svg);
+                            &:hover{
+                                background-image: url(../../assets/images/wp-black.svg);
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

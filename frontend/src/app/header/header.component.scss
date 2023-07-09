@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 0;
+}
+.header-area .main-nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 0;
+    align-items: center;
+    .nav {
+        float: none;
+        margin: 0;
+    }
+}
+
+.logo {
+    width: 100px;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.header-sticky{
+    .logo {
+        width: 100px;
+        img {
+            width: 80%;
+        }
+    }
+
+    &.background-header .main-nav .nav{
+        margin-top:0!important;
+    }
+}
+
+.logo img,
+.background-header .main-nav .nav{
+    transition:all 0.3s ease-in-out;
+}

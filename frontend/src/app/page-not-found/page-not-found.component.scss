@@ -1,0 +1,47 @@
+.notfound {
+    color: black;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../../assets/images/comingsoonBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 1;
+        opacity: 0.3;
+    }
+
+    h1 {
+        z-index: 2;
+        position: relative;
+        color:white;
+    }
+    p {
+        margin-bottom: 30px;
+        z-index: 2;
+        position: relative;
+    }
+
+    a {
+        z-index: 2;
+        position: relative;
+
+        &:hover{
+            color:white;
+        }
+    }
+}

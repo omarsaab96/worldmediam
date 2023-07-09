@@ -1,0 +1,178 @@
+<app-header></app-header>
+<app-subbanner pageTitle='Careers'></app-subbanner>
+
+<div class="intro">
+    <div class="container">
+        <p>
+            Our employees are the driving force behind our success. We're committed to creating a supportive and dynamic
+            work environment that fosters growth, development, and innovation. If you're looking for a challenging and
+            rewarding career with a company that values its employees, then you've come to the right place. We offer a
+            wide range of career opportunities across various departments, from marketing and sales to design and
+            development. We believe in promoting from within and providing our employees with the resources and support
+            they need to achieve their career goals. If you're passionate about your work and want to be part of a team
+            that's dedicated to excellence, then we invite you to explore our career opportunities.
+        </p>
+    </div>
+</div>
+
+<div class="our-services section ">
+    <div class="container">
+        <div class="row careerListing">
+            <p class="col-lg-12">We're sorry. No vacancies avalaible right now.</p>
+            <!-- <div class="careerItem col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="right-text">
+                        <h4>Senior graphic designer</h4>
+                        <div class="jobInfo">
+                            <div class="salary">USD 1800</div>
+                            <div class="hours">Monday to Friday from 8am till 5pm</div>
+                        </div>
+                        <div class="jobInfo">
+                            <div class="location">Beirut, Lebanon</div>
+                        </div>
+                        <p>
+                            We are seeking a highly creative and experienced Senior Graphic Designer to join our team.
+                            The ideal candidate will be responsible for conceptualizing and creating visual designs,
+                            layouts, and illustrations for various marketing and branding materials. They should be able
+                            to work collaboratively with a team, possess excellent communication skills, and be able to
+                            manage multiple projects simultaneously while meeting tight deadlines.
+                        </p>
+                        <ul>
+                            Responsibilities:
+                            <li>Stay up-to-date with industry trends and incorporate innovative design solutions.</li>
+                            <li>Manage and prioritize multiple projects simultaneously while meeting tight deadlines.
+                            </li>
+                            <li>Develop and maintain relationships with external vendors and partners as necessary.</li>
+                            <li>Mentor and provide guidance to junior designers on the team.</li>
+                        </ul>
+                        
+                        <div class="main-prim-button">
+                            <a routerlink="/career" routerLinkActive='active'>Apply now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="careerItem col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="right-text">
+                        <h4>Senior graphic designer</h4>
+                        <div class="jobInfo">
+                            <div class="salary">USD 1800</div>
+                            <div class="hours">Monday to Friday from 8am till 5pm</div>
+                        </div>
+                        <div class="jobInfo">
+                            <div class="location">Beirut, Lebanon</div>
+                        </div>
+                        <p>
+                            We are seeking a highly creative and experienced Senior Graphic Designer to join our team.
+                            The ideal candidate will be responsible for conceptualizing and creating visual designs,
+                            layouts, and illustrations for various marketing and branding materials. They should be able
+                            to work collaboratively with a team, possess excellent communication skills, and be able to
+                            manage multiple projects simultaneously while meeting tight deadlines.
+                        </p>
+                        <ul>
+                            Responsibilities:
+                            <li>Stay up-to-date with industry trends and incorporate innovative design solutions.</li>
+                            <li>Manage and prioritize multiple projects simultaneously while meeting tight deadlines.
+                            </li>
+                            <li>Develop and maintain relationships with external vendors and partners as necessary.</li>
+                            <li>Mentor and provide guidance to junior designers on the team.</li>
+                        </ul>
+                        
+                        <div class="main-prim-button">
+                            <a routerlink="/career" routerLinkActive='active'>Apply now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="careerItem col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="right-text">
+                        <h4>Senior graphic designer</h4>
+                        <div class="jobInfo">
+                            <div class="salary">USD 1800</div>
+                            <div class="hours">Monday to Friday from 8am till 5pm</div>
+                        </div>
+                        <div class="jobInfo">
+                            <div class="location">Beirut, Lebanon</div>
+                        </div>
+                        <p>
+                            We are seeking a highly creative and experienced Senior Graphic Designer to join our team.
+                            The ideal candidate will be responsible for conceptualizing and creating visual designs,
+                            layouts, and illustrations for various marketing and branding materials. They should be able
+                            to work collaboratively with a team, possess excellent communication skills, and be able to
+                            manage multiple projects simultaneously while meeting tight deadlines.
+                        </p>
+                        <ul>
+                            Responsibilities:
+                            <li>Stay up-to-date with industry trends and incorporate innovative design solutions.</li>
+                            <li>Manage and prioritize multiple projects simultaneously while meeting tight deadlines.
+                            </li>
+                            <li>Develop and maintain relationships with external vendors and partners as necessary.</li>
+                            <li>Mentor and provide guidance to junior designers on the team.</li>
+                        </ul>
+                        
+                        <div class="main-prim-button">
+                            <a routerlink="/career" routerLinkActive='active'>Apply now</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<div class="contact-us section uploadcv">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <div class="section-heading">
+                    <h2>Upload your <em>CV</em> </h2>
+                    <p>Can't find a suitable position?<br>
+                        Send us your CV and we will contact you as soon as a new opportunity arises.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <form id="contact" (ngSubmit)="submitForm()" #uploadForm="ngForm" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input [ngClass]="{'error': errorName}" type="name" name="name" id="name" [(ngModel)]="formData.name" placeholder="Name" autocomplete="off">
+                            </fieldset>
+                        </div>
+                        <!-- <div class="col-lg-12">
+                            <fieldset>
+                                <input type="text" name="phone" id="phone" [(ngModel)]="formData.phone" pattern="" placeholder="Phone">
+                            </fieldset>
+                        </div> -->
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="text" [ngClass]="{'error': errorEmail}"  name="email" id="email" [(ngModel)]="formData.email" placeholder="Email" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="file"[ngClass]="{'error': errorCV}" id="cv" name="cv" class="form-control-file" (change)="onFileChange($event)">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="main-button ">Apply Now</button>
+                                <div>
+                                    <span *ngIf="errorName">Name is required</span>
+                                    <span *ngIf="errorEmail">Email is either empty or invalid</span>
+                                    <span *ngIf="errorCV">CV is required</span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="contact-dec">
+                        <img src="assets/images/contact-decoration.png" alt="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

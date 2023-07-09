@@ -1,0 +1,162 @@
+<app-header></app-header>
+<app-subbanner pageTitle='Contact Us'></app-subbanner>
+
+<div class="contactForm">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="intro">
+                <h2>
+                    Get a free business consultation
+                </h2>
+                <br>
+                <p>
+                    By sending us a message, you will have the opportunity to receive a complimentary 20-minute business consultation meeting with our esteemed CEO. During this meeting, we will delve into an insightful discussion about your business and explore strategies for its improvement. Don't miss out on this valuable opportunity - reach out to us today and take the first step towards enhancing your business success!
+                </p>
+            </div>
+            <form id="contact" action="" method="post" style="margin:0;" (ngSubmit)="submitForm()">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <fieldset>
+                            <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email"
+                                required="">
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                            <textarea name="message" type="text" class="form-control" id="message"
+                                placeholder="Message" required=""></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                            <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="contact-dec">
+                    <img src="assets/images/contact-decoration.png" alt="">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+<div id="contact" class="contact-us section">
+    <div class="container">
+
+        
+        <div class="row">
+            <div class="col-lg-12 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <div class="section-heading">
+                    <!-- <br><br><br><br> -->
+                    <h4>Contact information</h4><br>
+                    <div class="phone-info">
+                        <h4>
+                            <span>
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:0096181652110">+961 81 652 110</a>
+                            </span>
+                        </h4>
+                        <br>
+                        <h4>
+                            <span>
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:info@worldmediam.com">info@worldmediam.com</a>
+                            </span>
+                        </h4>
+                        <br><br>
+                        <h4>
+                            Follow us on social media<br><br>
+                            <span>
+                                <a href="https://www.facebook.com/profile.php?id=100086601592048" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/worldmediamanagement.lb/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://api.whatsapp.com/send?phone=%2B96181652110&fbclid=IwAR1WXW19gf-io977x6p-rVX7vrIHSvX3yD4urFyYlusFaoTHzCVOQfb0h_E"
+                                    target="_blank">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <form id="contact" action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email"
+                                    required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <textarea name="message" type="text" class="form-control" id="message"
+                                    placeholder="Message" required=""></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="contact-dec">
+                        <img src="assets/images/contact-decoration.png" alt="">
+                    </div>
+                </form>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<div class="mapouter">
+
+    <div class="container">
+        <div class="section-heading">
+            <h2>Locate us on the map</h2>
+            <p>
+                If you would like to pay us a visit, you are more than welcome into our office located in Khaldeh,
+                Lebanon.<br><br>
+                <b>Opening hours:</b><br>
+                Monday to Friday from 9am till 5pm
+            </p>
+        </div>
+    </div>
+
+    <div class="gmap_canvas">
+        <div id="google-maps-display" style="">
+            <iframe style="height:500px;width:100%;border:0;" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=World+Media+Management,+Khaldeh+Highway,+Beirut,+Lebanon&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div>
+        <style>
+            .map-generator {
+                max-width: 100%;
+                max-height: 100%;
+                background: none;
+            }
+        </style>
+    </div>
+</div>
+
+<app-footer></app-footer>

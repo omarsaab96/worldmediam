@@ -1,0 +1,18 @@
+$primcol: #662f8e;
+$seccol: #29a9e1;
+
+.subbanner{
+    padding-top:200px;
+    padding-bottom:50px;
+    // height:300px;
+    background-color: #fafafa;
+    margin-bottom:40px;
+
+    .pageTitle{
+        color:$primcol;
+    }
+
+    &.mb0{
+        margin-bottom:0;
+    }
+}

@@ -1,0 +1,83 @@
+.tabs {
+    margin-bottom: 0px;
+    min-height: 45vh;
+    .tabswrapper {
+        border-bottom: 3px solid #33aadf;
+        margin-bottom: 40px;
+        .tab {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #2a2a2a;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            padding: 0 0 10px 0;
+            margin-right: 20px;
+            cursor: pointer;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            &.active {
+                border-bottom: 3px solid #33aadf;
+                color: #33aadf;
+            }
+
+            &:hover {
+                color: #33aadf;
+            }
+        }
+    }
+
+    .tabContent {
+        display:none;
+        &.active{
+            display:block;
+        }
+    }
+}
+
+.brandingListing {
+    .brandingItem {
+        margin-bottom: 30px;
+        .brandingImage {
+            border-radius: 20px;
+            overflow: hidden;
+
+            a {
+                display: block;
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            img {
+                transition: all 0.3s ease-in-out;
+                display: block;
+            }
+        }
+    }
+}
+
+.brandingDetails{
+    background-color: rgba(197,197,197,0.3);
+    padding:40px 0;
+    // display:none;
+}
+
+.postsListing {
+    .postItem {
+        margin-bottom: 30px;
+        flex: 0 0 33.33333333%;
+        max-width: 33.33333333%;
+
+        &:hover{
+            img{
+                transform:none;
+            }
+        }
+    }
+}

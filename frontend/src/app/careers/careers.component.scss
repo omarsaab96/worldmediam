@@ -1,0 +1,155 @@
+$primcol: #662f8e;
+
+.careerListing {
+    margin-bottom: 40px;
+}
+
+.our-services {
+    padding-top: 0;
+    margin-bottom: 100px;
+}
+
+.careerItem {
+    margin-bottom: 40px;
+    .item {
+        display: block;
+        border-radius: 20px;
+        border: 2px solid $primcol;
+        padding: 40px;
+
+        .right-text {
+            h4 {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            .jobInfo {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+
+                .salary {
+                    position: relative;
+                    padding-left: 30px;
+                    color: $primcol;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 40px;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%) scale(1.5);
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(../../assets/images/salary2.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+                .hours {
+                    position: relative;
+                    padding-left: 30px;
+                    color: $primcol;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 40px;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(../../assets/images/hours.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+                .location {
+                    position: relative;
+                    padding-left: 30px;
+                    color: $primcol;
+                    font-size: 18px;
+                    line-height: 24px;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(../../assets/images/location.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &:nth-child(even) .item {
+        flex-direction: row-reverse;
+    }
+}
+
+.contact-us p {
+    margin-bottom: 30px;
+}
+
+form#contact {
+    margin: 0;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    color: black;
+
+    li {
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 12px;
+            background-color: $primcol;
+        }
+    }
+}
+
+.error {
+    border: 2px solid red!important;
+    background-color: #fae8e8!important;
+}
