@@ -5,7 +5,7 @@
         "node": ">=18 <19"
     },
     "scripts": {
-        "start": "cd backend/built && node server.js",
+        "start": "cd backend && node server.js",
         "deployBackend": "cd backend && npm run build",
         "deployFrontend":"cd frontend && npm install --legacy-peer-deps && ng build",
         "deploy":"npm run deployFrontend && npm run deployBackend"
