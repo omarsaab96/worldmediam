@@ -9,6 +9,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  baseAPIUrl = "https://worldmediamanagement.onrender.com";
+
   name: string= '';
   email: string= '';
   message: string= '';
@@ -26,7 +28,7 @@ export class HomeComponent implements OnInit {
     }
     const formData = form.value;
 
-    this.http.post('http://localhost:3000/send-email', formData)
+    this.http.post(this.baseAPIUrl+'/send-email', formData)
       .subscribe(
         (response) => {
           console.log('Email sent successfully');

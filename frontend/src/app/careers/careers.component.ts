@@ -8,6 +8,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./careers.component.scss']
 })
 export class CareersComponent {
+  baseAPIUrl = "https://worldmediamanagement.onrender.com";
+
 
   formData = {
     name: '',
@@ -85,7 +87,7 @@ export class CareersComponent {
       formData.append('cv', this.formData.cv!);
 
       // Send the form data to the server
-      this.http.post('http://localhost:3000/send-cv', formData)
+      this.http.post(this.baseAPIUrl + '/send-cv', formData)
         .subscribe(
           response => {
             // Handle the server response here
